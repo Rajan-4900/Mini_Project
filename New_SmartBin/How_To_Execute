@@ -1,0 +1,43 @@
+how to execute this program 
+
+step-by-step:
+Download Arduinio IDE software
+install the libraries and also Boards in Arduino Ide Software:
+1. ESP8266WiFi
+2. SoftwareSerial
+3. ESP8266HTTPClient
+4. WiFiClientSecure
+5. LiquidCrystal_I2C
+
+change ssid and password for setuping Hotspot in your phone (line no: 197,198),
+then change the host and private-key  from the maker.ifttt.com website (line no: 203, 204),
+And change the gpslocation and LocationName to Your Location (Format: "latitude,longitude")  (line no: 207,208),
+change the phone number to Your phone number (line no:211)
+
+then add your twilio account AccountSid, AuthToken, FromNumber, ToNumber (line no:218,219,220,221)
+
+  then After all the setup save->verify->Upload
+  befor Uploading dont connect to any module only u should connect ESP8266 with cable 
+
+You should Dont Connect :
+     remove wires from esp8266:
+        GPS Module
+        GSM Module
+        LCD Display With i2c Module
+        Ultrasonic Sensor
+        BreadBoard
+
+Then After Uploading the code in ESP8266
+Then U can Connect The Module With ESP8266
+
+And Then Open Serial Monitor 
+clike RST in ESP8266 H/W module
+then it will Connecting to the Wifi 
+befor this u should setup the hotspost with the same ssid and password from the code (exact same no changes)
+
+then connect to the laptop with same network 
+
+then u will see the running Program And also with ID Addres in serial monitor
+
+copy that ip address and paste it to the browser (which u have setted with same Wifi) 
+then u will see the OUTPUT of the project
