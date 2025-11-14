@@ -194,21 +194,21 @@ float level;
 bool alertSent = false;
 bool whatsappAlertSent = false;
 
-const char *ssid = "Rajan";
-const char *password = "1234567890";
+const char *ssid = "Hotspot Name";
+const char *password = "Hotspot Password";
 
 void send_event(const char *event);
 bool sendWhatsAppAlert();
 
 const char *host = "maker.ifttt.com";
-const char *privateKey = "cUfhoEBYaqaf7gARHvFhZl";
+const char *privateKey = "ifttt private key";
 
 // GPS Location (Update with your actual coordinates)
-const char *gpsLocation = "12.8890771,77.5506784"; // Format: "latitude,longitude"
-const char *locationName = "City Engineering Collage"; // Your location name
+const char *gpsLocation = "12.88xxxxx,77.55xxxxx"; // Format: "latitude,longitude"
+const char *locationName = "DustBin Location"; // Your location name
 
 // Phone number for SMS
-const char *phoneNumber = "+917349710013";
+const char *phoneNumber = "+91phoneNumber";
 
 // Alert channel toggles
 const bool enableGsmAlerts = false;
